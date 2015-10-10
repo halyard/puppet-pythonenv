@@ -1,0 +1,22 @@
+{
+  "name": "halyard-pythonenv",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure python environment via Boxen",
+  "source": "https://github.com/halyard/puppet-pythonenv",
+  "project_page": "https://github.com/halyard/puppet-pythonenv",
+  "issues_url": "https://github.com/halyard/puppet-pythonenv/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
+  ]
+}
