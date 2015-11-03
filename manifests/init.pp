@@ -5,8 +5,9 @@ class pythonenv(
 ) {
   include python
 
-  python::version { $versions: }
-
+  python::version { $versions:
+    require => Class['openssl']
+  } ->
   class { 'python::global':
     version => $default
   }
