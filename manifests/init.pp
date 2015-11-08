@@ -1,7 +1,7 @@
 # Configure python environment for system
 class pythonenv(
-  $versions = ['3.5.0', '2.7.10'],
-  $default = '2.7.10 3.5.0',
+  $versions = ['2.7.10', '3.5.0'],
+  $default = ['2.7.10', '3.5.0'],
 ) {
   include python
 
