@@ -11,4 +11,13 @@ class pythonenv(
   class { 'python::global':
     version => $default
   }
+
+  $system_pips = [
+    '/usr/local/bin/pip',
+    '/usr/local/bin/pip2',
+    '/usr/local/bin/pip2.7'
+  ]
+  file { $system_pips:
+    ensure => absent
+  }
 }
