@@ -8,7 +8,10 @@
   "project_page": "https://github.com/halyard/puppet-pythonenv",
   "issues_url": "https://github.com/halyard/puppet-pythonenv/issues",
   "dependencies": [
-
+    {
+      "name": "halyard/python",
+      "version_requirement": "3.0.x"
+    }
   ],
   "operatingsystem_support": [
     {
