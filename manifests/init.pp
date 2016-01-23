@@ -2,6 +2,7 @@
 class pythonenv(
   $versions = ['2.7.10', '3.5.0'],
   $default = ['2.7.10', '3.5.0'],
+  $modules = []
 ) {
   include python
 
@@ -10,6 +11,12 @@ class pythonenv(
   } ->
   class { 'python::global':
     version => $default
+  }
+
+  $modules.each |$module| {
+    python::package { $module:
+      python => $versions
+    }
   }
 
   $system_pips = [
