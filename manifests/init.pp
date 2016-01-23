@@ -4,6 +4,8 @@ class pythonenv(
   $default = ['2.7.10', '3.5.0'],
   $modules = []
 ) {
+  $modules = hiera_array('pythonenv::modules', [])
+
   include python
 
   python::version { $versions:
