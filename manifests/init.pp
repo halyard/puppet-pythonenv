@@ -2,7 +2,6 @@
 class pythonenv(
   $versions = ['2.7.10', '3.5.0'],
   $default = ['2.7.10', '3.5.0'],
-  $modules = []
 ) {
   $modules = hiera_array('pythonenv::modules', [])
 
